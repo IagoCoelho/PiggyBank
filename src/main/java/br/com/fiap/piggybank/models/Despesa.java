@@ -3,6 +3,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Despesa {
+    private Long id;
     private BigDecimal valor;
     private LocalDate data;
     private String descricao;
@@ -13,6 +14,14 @@ public class Despesa {
         this.valor = valor;
         this.data = data;
         this.descricao = descricao;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public BigDecimal getValor() {
@@ -41,7 +50,7 @@ public class Despesa {
 
     @Override
     public String toString() {
-        return "Despesa [valor=" + valor + ", data=" + data + ", descricao=" + descricao + "]";
+        return "Despesa [valor=" + valor + ", data=" + data + ", descricao=" + descricao + ", id=" + ",]";
     }
 
     
